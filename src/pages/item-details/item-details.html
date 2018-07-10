@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle *ngIf="!selectedItem">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="sweetTitle">{{selectedItem.name}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4>
+        <img class="imageRounded" src={{selectedItem.image}}/>
+      </ion-col>
+      <ion-col col-8>
+        <ion-grid class="row">
+          <ion-row>
+            <ion-col>
+              <p>Stock:</p>
+            </ion-col>
+            <ion-col>
+              <p>{{selectedItem.stock}}</p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <p>Price:</p>
+            </ion-col>
+            <ion-col>
+              <p>{{selectedItem.price}} €</p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
