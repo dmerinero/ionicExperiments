@@ -8,13 +8,5 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <img class="imageRounded" src="{{item.image}}" item-left/>
-      {{item.name}}
-      <div class="item-note" item-right>
-        {{item.stock}}
-      </div>
-    </button>
-  </ion-list>
+  <product></product>
 </ion-content>

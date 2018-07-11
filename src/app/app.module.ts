@@ -12,13 +12,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { GetStockProvider } from '../providers/get-stock/get-stock';
 
 import { HttpClientModule } from '@angular/common/http';
+import { ProductComponent } from '../components/product/product';
 
 @NgModule({
   declarations: [
     MyApp,
     HelloIonicPage,
     ItemDetailsPage,
-    ListPage
+    ListPage,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
